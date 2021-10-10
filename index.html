@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/972c459d7e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="conunterApp">
+        <div class="counterApp__seetings">
+            <h1>Ustawienia</h1>
+            <label for="eventName">Nazwa wydarzenia:</label>
+            <input type="text" id="eventName" value="Nowy rok">
+            <table class="data">
+                <tr>
+                    <td><label for="eventDay">Dzień: </label></td>
+                    <td><label for="eventMonth">Miesiąc: </label></td>
+                    <td><label for="eventYear">Rok: </label></td>
+                </tr>
+                <tr>
+                    <td><input type="number" for="eventDay" maxlength="2" value="1"></td>
+                    <td><input type="number" for="eventMonth" maxlength="2" value="1"></td>
+                    <td><input type="number" for="eventYear" maxlength="4" value="2021"></td>
+                </tr>
+            </table>
+            <label for="eventImage">Link do obrazka:</label>
+            <input type="text" id="eventImage" value="default.jpg">
+            <button class="save">Zapisz</button>
+        </div>
+
+
+        <div class="appBody">
+            <div class="imageSection">
+                <div class="settingsBtn"><i class="fas fa-sliders-h"></i></div>
+            </div>
+            <div class="timeSection">
+                <h3><span class="event">Nowy rok</span> za:</h3>
+                <div class="timeCards">
+                    <div class="card">
+                        <p class="daysCount number">1</p>
+                        <p class="cardTitle">Dni</p>
+                    </div>
+                    <div class="card">
+                        <p class="hoursCount number">1</p>
+                        <p class="cardTitle">Godzin</p>
+                    </div>
+                    <div class="card">
+                        <p class="minutesCount number">1</p>
+                        <p class="cardTitle">Minut</p>
+                    </div>
+                    <div class="card">
+                        <p class="secondsCount number">1</p>
+                        <p class="cardTitle">Sekund</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
